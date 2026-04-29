@@ -1,19 +1,89 @@
+<!-- #region head -->
 <!doctype html>
-<html lang="en">
+<html class="page" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Dia</title>
+    <title>Air</title>
     <link
       rel="stylesheet"
-      href="src/styles/main.scss"
+      href="src/styles/style.scss"
     />
+    <link
+      rel="shortcut icon"
+      href="src/images/logo/air-logo.svg"
+      type="image/x-icon"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <h1>Dia</h1>
+  <!-- #endregion -->
+  <body class="page__body">
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="top-bar">
+            <div class="top-bar__block">
+              <a href="#" class="top-bar__logo-link">
+                <img
+                  src="src/images/logo/air-logo.svg"
+                  alt="Air logo"
+                  class="top-bar__logo"
+                >
+              </a>
+              <a
+                href="#"
+                class="top-bar__icon top-bar__icon--menu"
+              ></a>
+            </div>
+
+            <a class="top-bar__hire-us" href="#">Hire us</a>
+          </div>
+
+          <div class="header__bottom">
+            <h1 class="header__title">
+              Strategic Agency
+            </h1>
+
+            <p class="header__text">
+              We believe in the power of bold ideas that can solve business challenges.
+            </p>
+
+            <div class="header__button-wrapper">
+              <div class="header__button">
+                Learn more
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide-bar">
+        <div class="slide-bar__buttons">
+          <a
+            href="#"
+            class="slide-bar__button slide-bar__button--left"
+          ></a>
+          <a
+            href="#"
+            class="slide-bar__button slide-bar__button--right"
+          ></a>
+        </div>
+
+        <div class="slide-bar__title">Intro</div>
+
+        <div class="slide-bar__text">
+          By the same illusion which lifts the horizon.
+        </div>
+      </div>
+    </header>
     <script src="src/scripts/main.js"></script>
   </body>
 </html>
