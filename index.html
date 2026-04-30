@@ -41,9 +41,26 @@
               </a>
               <a
                 href="#menu"
-                class="top-bar__icon top-bar__icon--menu"
+                class="icon icon--menu"
               ></a>
             </div>
+
+            <nav class="top-bar__items">
+              <ul class="top-bar__list">
+                <li class="top-bar__item">
+                  <a href="#about-us" class="top-bar__link">About us</a>
+                </li>
+                <li class="top-bar__item">
+                  <a href="#services" class="top-bar__link">Services</a>
+                </li>
+                <li class="top-bar__item">
+                  <a href="#testimonials" class="top-bar__link">Testimonials</a>
+                </li>
+                <li class="top-bar__item">
+                  <a href="#contact us" class="top-bar__link">Contact us</a>
+                </li>
+              </ul>
+            </nav>
 
             <a class="top-bar__hire-us" href="#contact-us">Hire us</a>
           </div>
@@ -86,7 +103,44 @@
       </div>
     </header>
 
-    <aside class="menu page__menu" id="menu"></aside>
+    <aside class="menu page__menu" id="menu">
+      <div class="container">
+        <div class="top-bar menu__top">
+          <div class="top-bar__block">
+            <a href="#" class="top-bar__logo-link">
+              <img
+                src="src/images/logo/air-logo.svg"
+                alt="Air logo"
+                class="top-bar__logo"
+              >
+            </a>
+            <a
+              href="#"
+              class="icon icon--close"
+            ></a>
+          </div>
+        </div>
+
+        <div class="menu__bottom">
+          <nav class="nav menu__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#about-us">About us</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#services">Services</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#testimonials">Testimonials</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#contact-us">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </aside>
 
     <main class="main">
       <section class="about-us" id="about-us">Who we are</section>

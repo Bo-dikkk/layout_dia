@@ -4,6 +4,10 @@
   justify-content: space-between;
   padding-top: 20px;
 
+  @include on-small-desktop {
+    padding-top: 52px;
+  }
+
   &__block {
     display: flex;
     gap: 32px;
@@ -12,20 +16,6 @@
 
   &__logo {
     @include hover(transform, scale(1.2));
-  }
-
-  &__icon {
-    display: block;
-    height: 24px;
-    width: 24px;
-    background-size: cover;
-    background-position: center;
-
-    @include hover(transform, scale(1.2));
-
-    &--menu {
-      background-image: url(/src/images/icons/icon-menu.svg);
-    }
   }
 
   &__hire-us {
@@ -38,8 +28,6 @@
     text-decoration: none;
     text-transform: uppercase;
 
-    @include hover(transform, scale(1.2));
-
     &::after {
       content: '';
       position: absolute;
@@ -49,6 +37,53 @@
       width: 100%;
       background-color: $main-blue;
       border-radius: 4px;
+
+      transition: transform 0.3s;
+      transform: scale(0);
+      transform-origin: left;
+    }
+
+    &:hover::after {
+      transform: scale(1);
+    }
+  }
+
+  &__items {
+    display: none;
+    margin: 0;
+    padding: 0;
+
+    @include on-small-desktop {
+      display: block;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 48px;
+  }
+
+  &__link {
+    position: relative;
+    text-decoration: none;
+    color: $white;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: $main-blue;
 
       transition: transform 0.3s;
       transform: scale(0);

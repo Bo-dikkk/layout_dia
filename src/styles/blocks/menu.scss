@@ -1,0 +1,15 @@
+.menu {
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: $header-bg-color;
+  font-weight: 700;
+  text-transform: uppercase;
+  overflow: auto;
+
+  &__top {
+    position: static;
+    top: 0;
+    z-index: 1;
+    margin-bottom: 64px;
+  }
+}
