@@ -2,6 +2,9 @@
   background-color: $header-bg-color;
   color: $white;
   height: 100vh;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
 
   &__content {
     margin: 0;
