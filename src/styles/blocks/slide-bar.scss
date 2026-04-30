@@ -1,12 +1,14 @@
 .slide-bar {
   background-image: url(/src/images/slider/slide-img-1.jpg);
-  border-radius: 30px;
   height: 390px;
-  padding-inline: 20px;
   width: 100%;
   box-sizing: border-box;
+  border-radius: 30px;
   background-size: cover;
   background-position: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 
   &__buttons {
     display: flex;

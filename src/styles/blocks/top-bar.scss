@@ -10,12 +10,18 @@
     align-items: center;
   }
 
+  &__logo {
+    @include hover(transform, scale(1.2));
+  }
+
   &__icon {
     display: block;
     height: 24px;
     width: 24px;
     background-size: cover;
     background-position: center;
+
+    @include hover(transform, scale(1.2));
 
     &--menu {
       background-image: url(/src/images/icons/icon-menu.svg);
@@ -28,9 +34,11 @@
     font-size: 13px;
     line-height: 150%;
     letter-spacing: 3px;
-    color: #fff;
+    color: $white;
     text-decoration: none;
     text-transform: uppercase;
+
+    @include hover(transform, scale(1.2));
 
     &::after {
       content: '';
@@ -39,7 +47,16 @@
       display: block;
       height: 2px;
       width: 100%;
-      background-color: #2060f6;
+      background-color: $main-blue;
+      border-radius: 4px;
+
+      transition: transform 0.3s;
+      transform: scale(0);
+      transform-origin: left;
+    }
+
+    &:hover::after {
+      transform: scale(1);
     }
   }
 }
