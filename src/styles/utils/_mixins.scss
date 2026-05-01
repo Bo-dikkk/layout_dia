@@ -16,18 +16,6 @@
   }
 }
 
-@mixin on-design {
-  @media (min-width: $design-min-width) {
-    @content;
-  }
-}
-
-@mixin on-large-screen {
-  @media (min-width: $large-screen-min-width) {
-    @content;
-  }
-}
-
 @mixin hover($_property, $_toValue) {
   transition: #{$_property} 0.3s;
   &:hover {
