@@ -9,6 +9,20 @@
   position: absolute;
   right: 0;
   bottom: 0;
+  padding-inline: 20px;
+
+  @include on-tablet {
+    padding-inline: 40px;
+  }
+
+  @include on-small-desktop {
+    height: 680px;
+    padding-inline: 78px;
+  }
+
+  @include on-desktop {
+    padding-inline: 48px;
+  }
 
   &__buttons {
     display: flex;

@@ -1,11 +1,24 @@
 .top-bar {
+  background-color: $header-bg-color;
+  color: $white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 20px;
+  height: 56px;
+  padding-block: 20px;
+  box-sizing: border-box;
+
+  grid-column: span 2;
+
+  @include on-tablet {
+    grid-column: span 6;
+  }
 
   @include on-small-desktop {
-    padding-top: 52px;
+    height: 120px;
+    padding-block: 52px;
+
+    grid-column: span 12;
   }
 
   &__block {
