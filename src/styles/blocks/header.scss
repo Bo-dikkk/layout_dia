@@ -4,9 +4,14 @@
     color: $white;
     height: 100vh;
     min-height: 880px;
+    margin: 0 auto;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     position: relative;
+
+    @include on-desktop {
+      max-width: $design-width;
+    }
   }
 
   &__content {
