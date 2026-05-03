@@ -1,0 +1,84 @@
+.services {
+  &__content {
+    @include page-grid;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+    gap: 24px;
+    grid-column: span 2;
+
+    @include on-tablet {
+      gap: 30px;
+      grid-column: span 6;
+    }
+
+    @include on-small-desktop {
+      grid-column: 7 / 13;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__note {
+    margin: 0;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $section-note-color;
+
+    grid-column: span 2;
+
+    @include on-tablet {
+      grid-column: 1 / 4;
+    }
+
+    @include on-small-desktop {
+      grid-column: 1 / 5;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-top: 16px;
+    color: $section-title-color;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    text-align: left;
+
+    grid-column: span 2;
+
+    @include on-tablet {
+      grid-column: 1 / 4;
+    }
+
+    @include on-small-desktop {
+      grid-column: 1 / 5;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-top: 24px;
+    color: $section-text-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+
+    grid-column: span 2;
+
+    @include on-tablet {
+      grid-column: 1 / 4;
+    }
+
+    @include on-small-desktop {
+      grid-column: 1 / 5;
+    }
+  }
+}
