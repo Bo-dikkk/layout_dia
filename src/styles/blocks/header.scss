@@ -9,6 +9,10 @@
     border-bottom-right-radius: 30px;
     position: relative;
 
+    @include on-small-desktop {
+      min-height: 800px;
+    }
+
     @include on-desktop {
       max-width: $design-width;
     }

@@ -9,26 +9,55 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  padding-inline: 20px;
-
-  @include on-tablet {
-    padding-inline: 40px;
-  }
 
   @include on-small-desktop {
+    top: 120px;
     height: 680px;
     width: 50%;
-    padding-inline: 78px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
-  @include on-desktop {
-    padding-inline: 48px;
+  &__container {
+    padding-inline: 20px;
+    padding-top: 250px;
+
+    @include on-tablet {
+      padding-inline: 40px;
+      padding-top: 242px;
+    }
+
+    @include on-small-desktop {
+      padding-inline: 78px;
+      padding-top: 564px;
+    }
+
+    @include on-desktop{
+      padding-inline: 48px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+    @include on-small-desktop {
+      flex-direction: row;
+      align-items: center;
+      column-gap: 24px;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
   }
 
   &__buttons {
     display: flex;
     gap: 16px;
-    padding-top: 250px;
   }
 
   &__button {
@@ -49,7 +78,6 @@
 
   &__title {
     margin: 0;
-    margin-top: 16px;
     text-align: left;
     text-transform: uppercase;
 
@@ -61,7 +89,6 @@
 
   &__text {
     margin: 0;
-    margin-top: 8px;
     text-align: left;
 
     font-family: 'Open Sans', sans-serif;
