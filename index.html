@@ -410,7 +410,7 @@
                 <p class="people__name">
                   Michel Grover
                 </p>
-                
+
                 <p class="people__info">
                   Hulu
                 </p>
@@ -420,11 +420,114 @@
         </div>
       </section>
 
-      <section class="vpr" id="vpr">Vision, Passion, Results</section>
+      <section class="vpr" id="vpr">
+        <div class="container vpr__container">
+          <div class="vpr__content">
+            <h1 class="vpr__title">
+              Vision, Passion, Results
+            </h1>
 
-      <section class="send-message" id="send-message">Send us a message</section>
+            <p class="vpr__text">
+              We are sure that first-rate job is possible
+              only if all three components are united.
+            </p>
 
-      <section class="contact-us" id="contact-us">Contact us</section>
+            <a href="#contact-us" class="vpr__button">
+              Apply
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-us" id="contact-us">
+        <div class="container">
+          <div class="contact-us__content">
+            <div class="contact-us__message">
+              <h1 class="contact-us__title-message">
+                Send us a message
+              </h1>
+              <form
+                class="contact-us__form"
+                action="#"
+                onsubmit="this.reset(); return false;"
+              >
+                <input
+                  class="contact-us__input"
+                  type="email"
+                  placeholder="Your email"
+                  required
+                >
+                <input
+                  class="contact-us__input"
+                  type="text"
+                  placeholder="Your name"
+                  required
+                >
+                <textarea
+                  class="contact-us__input contact-us__input--textarea"
+                  placeholder="Your message"
+                  required
+                ></textarea>
+                <button
+                  type="submit"
+                  class="contact-us__button"
+                  value="send"
+                >
+                  Send
+                </button>
+              </form>
+            </div>
+
+            <div class="contact-us__contacts">
+              <h1 class="contact-us__title-contacts">
+                Contact us
+              </h1>
+              <p class="contact-us__text contact-us__text--call-us">
+                Call us
+              </p>
+              <a href="tel:654321987" class="contact-us__tel">
+                654 321 987
+              </a>
+              <p class="contact-us__text">
+                Visit us
+              </p>
+              <a
+                href="https://maps.app.goo.gl/xTqiZrBvfMGrB3697"
+                target="_blank"
+                class="contact-us__adress"
+              >
+                2905 West Drive, Buffalo Grove
+              </a>
+              <p class="contact-us__text">
+                Our socials
+              </p>
+              <div class="contact-us__socials">
+                <a href="#" class="contact-us__link">
+                  <img
+                    src="src/images/socials/facebook.svg"
+                    alt="socials"
+                    class="contact-us__photo"
+                  >
+                </a>
+                <a href="#" class="contact-us__link">
+                  <img
+                    src="src/images/socials/twitter.svg"
+                    alt="socials"
+                    class="contact-us__photo"
+                  >
+                </a>
+                <a href="#" class="contact-us__link">
+                  <img
+                    src="src/images/socials/instagram.svg"
+                    alt="socials"
+                    class="contact-us__photo"
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer"></footer>
