@@ -8,12 +8,8 @@
 
   grid-column: span 3;
 
-  @include on-tablet {
-    position: relative;
-    transform: translateY(0);
-    transition: transform 0.3s;
-
-    &:hover {
+  &--move-up {
+    @include on-tablet {
       transform: translateY(-50%);
     }
   }
@@ -66,6 +62,7 @@
   }
 
   &__learn-more {
+    text-decoration: none;
     color: $card-learn-more-color;
     font-weight: 600;
     font-size: 15px;
