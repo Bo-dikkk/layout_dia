@@ -8,6 +8,16 @@
 
   grid-column: span 3;
 
+  @include on-tablet {
+    position: relative;
+    transform: translateY(0);
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: translateY(-50%);
+    }
+  }
+
   &__number {
     margin: 0;
     margin-top: 32px;
