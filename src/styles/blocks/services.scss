@@ -4,24 +4,26 @@
   }
 
   &__cards {
-    @include page-grid;
-
+    display: grid;
+    gap: 24px;
     margin-top: 48px;
-    row-gap: 24px;
     grid-column: span 2;
 
     @include on-tablet {
+      grid-template-columns: repeat(6, 1fr);
       margin-top: 56px;
-      row-gap: 30px;
+      gap: 30px;
       grid-column: span 6;
     }
 
     @include on-small-desktop {
       margin-top: 140px;
-      grid-column: span 12;
+      gap: 20px;
+      grid-column: 7 / 13;
     }
 
     @include on-desktop {
+      gap: 30px;
       margin-top: 132px;
     }
   }
