@@ -8,6 +8,8 @@
 
   grid-column: span 3;
 
+  @include hover(transform, scale(1.05));
+
   &--move-up {
     @include on-tablet {
       transform: translateY(-50%);
