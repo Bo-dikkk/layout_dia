@@ -9,6 +9,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
+  transition: background-image 0.3s ease;
 
   @include on-small-desktop {
     top: 120px;
