@@ -1,12 +1,13 @@
 .header {
+  background-color: $header-bg-color;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
+
   &__container {
-    background-color: $header-bg-color;
     color: $white;
     min-height: 880px;
     margin: 0 auto;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    position: relative;
 
     @include on-small-desktop {
       min-height: 800px;
