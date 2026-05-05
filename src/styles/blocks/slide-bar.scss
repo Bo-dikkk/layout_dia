@@ -67,6 +67,8 @@
     background-size: cover;
     background-position: center;
 
+    @include hover(transform, scale(1.2));
+
     &--left {
       background-image: url(/src/images/slider/arrow-left.svg);
     }
